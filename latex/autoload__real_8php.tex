@@ -1,0 +1,32 @@
+\hypertarget{autoload__real_8php}{}\doxysection{api/vendor/composer/autoload\+\_\+real.php File Reference}
+\label{autoload__real_8php}\index{api/vendor/composer/autoload\_real.php@{api/vendor/composer/autoload\_real.php}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComposerAutoloaderInit9f04f209162c3cc7b2bbde15c2d2182a}{Composer\+Autoloader\+Init9f04f209162c3cc7b2bbde15c2d2182a}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{autoload__real_8php_aa48d849bf3e303c072128c348175839e}{composer\+Require9f04f209162c3cc7b2bbde15c2d2182a}} (\$file\+Identifier, \$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{autoload__real_8php_aa48d849bf3e303c072128c348175839e}\label{autoload__real_8php_aa48d849bf3e303c072128c348175839e}} 
+\index{autoload\_real.php@{autoload\_real.php}!composerRequire9f04f209162c3cc7b2bbde15c2d2182a@{composerRequire9f04f209162c3cc7b2bbde15c2d2182a}}
+\index{composerRequire9f04f209162c3cc7b2bbde15c2d2182a@{composerRequire9f04f209162c3cc7b2bbde15c2d2182a}!autoload\_real.php@{autoload\_real.php}}
+\doxysubsubsection{\texorpdfstring{composerRequire9f04f209162c3cc7b2bbde15c2d2182a()}{composerRequire9f04f209162c3cc7b2bbde15c2d2182a()}}
+{\footnotesize\ttfamily composer\+Require9f04f209162c3cc7b2bbde15c2d2182a (\begin{DoxyParamCaption}\item[{}]{\$file\+Identifier,  }\item[{}]{\$file }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{}
+\DoxyCodeLine{65     \textcolor{keywordflow}{if} (empty(\$GLOBALS[\textcolor{stringliteral}{'\_\_composer\_autoload\_files'}][\$fileIdentifier])) \{}
+\DoxyCodeLine{66         require \$file;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         \$GLOBALS[\textcolor{stringliteral}{'\_\_composer\_autoload\_files'}][\$fileIdentifier] = \textcolor{keyword}{true};}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70 \}}
+
+\end{DoxyCode}

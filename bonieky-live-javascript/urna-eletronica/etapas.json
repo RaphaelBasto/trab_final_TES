@@ -1,0 +1,94 @@
+{
+    "0": {
+        "titulo": "vereador",
+        "numeros": 5,
+        "candidatos": {
+            "12008": {
+                "nome": "Agnus Do Povo",
+                "partido": "PDT",
+                "foto": "cv1.jpg"
+            },
+            "25255": {
+                "nome": "Carlos Augusto Da Cidade",
+                "partido": "DEM",
+                "foto": "cv2.jpg"
+            },
+            "35773": {
+                "nome": "Fuluya Yara Casaes Dutra",
+                "partido": "PMB",
+                "foto": "cv3.jpg"
+            },
+            "19171": {
+                "nome": "Guinho Sigilião",
+                "partido": "PODE",
+                "foto": "cv4.jpg"
+            },
+            "27321": {
+                "nome": "Jeronimo Do Carmo Telles",
+                "partido": "DC",
+                "foto": "cv5.jpg"
+            },
+            "25003": {
+                "nome": "Zila Castro",
+                "partido": "DEM",
+                "foto": "cv6.jpg"
+            }
+        }
+    },
+    "1": {
+        "titulo": "prefeito",
+        "numeros": 2,
+        "candidatos": {
+            "14": {
+                "nome": "Tatiana Negreiros",
+                "partido": "PTB",
+                "foto": "cp3.jpg",
+                "vice": {
+                    "nome": "Arão",
+                    "partido": "PRP",
+                    "foto": "v3.jpg"
+                }
+            },
+            "70": {
+                "nome": "Teka Pierrout",
+                "partido": "AVANTE",
+                "foto": "cp2.jpg",
+                "vice": {
+                    "nome": "Biga",
+                    "partido": "MDB",
+                    "foto": "v2.jpg"
+                }
+            },
+            "36": {
+                "nome": "Servilho",
+                "partido": "PTC",
+                "foto": "cp1.jpg",
+                "vice": {
+                    "nome": "João Rodrigues",
+                    "partido": "PV",
+                    "foto": "v1.jpg"
+                }
+            },
+            "19": {
+                "nome": "Romarinho",
+                "partido": "PODE",
+                "foto": "cp4.jpg",
+                "vice": {
+                    "nome": "Francisca Ferreira Ramos",
+                    "partido": "PPL",
+                    "foto": "v4.jpg"
+                }
+            },
+            "11": {
+                "nome": "Ronaldinho Da Van",
+                "partido": "PP",
+                "foto": "cp5.jpg",
+                "vice": {
+                    "nome": "Malú",
+                    "partido": "PC do B",
+                    "foto": "v5.jpg"
+                }
+            }
+        }
+    }
+}

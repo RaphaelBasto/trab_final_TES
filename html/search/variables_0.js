@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['_24banco_0',['$banco',['../conexao_8php.html#ac108c5ff77981efea5523fef9f5b8d9a',1,'conexao.php']]],
+  ['_24basedir_1',['$baseDir',['../autoload__classmap_8php.html#a873fc20cf44ad2f766893e95aab8df78',1,'$baseDir():&#160;autoload_classmap.php'],['../autoload__files_8php.html#a873fc20cf44ad2f766893e95aab8df78',1,'$baseDir():&#160;autoload_files.php'],['../autoload__namespaces_8php.html#a873fc20cf44ad2f766893e95aab8df78',1,'$baseDir():&#160;autoload_namespaces.php'],['../autoload__psr4_8php.html#a873fc20cf44ad2f766893e95aab8df78',1,'$baseDir():&#160;autoload_psr4.php']]],
+  ['_24class_2',['$class',['../client_8php.html#a252ba022809910ea710a068fc1bab657',1,'client.php']]],
+  ['_24files_3',['$files',['../classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a.html#a9590b15215a21e9b42eb546aeef79704',1,'Composer::Autoload::ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a']]],
+  ['_24hostname_4',['$hostname',['../conexao_8php.html#a8bf9ffb42ed554b203b55377d1fc9aa4',1,'conexao.php']]],
+  ['_24mysqli_5',['$mysqli',['../conexao_8php.html#a580989e8e3521433691a0351287f6315',1,'conexao.php']]],
+  ['_24param_6',['$param',['../client_8php.html#aefab80aedcdbb988388e43e2f52491f1',1,'client.php']]],
+  ['_24password_7',['$password',['../conexao_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d',1,'conexao.php']]],
+  ['_24prefixdirspsr4_8',['$prefixDirsPsr4',['../classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a.html#a923378483704151b859f5398efa4cb5b',1,'Composer::Autoload::ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a']]],
+  ['_24prefixlengthspsr4_9',['$prefixLengthsPsr4',['../classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a.html#a8a73e9adb9ac5eb77041801645646ff3',1,'Composer::Autoload::ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a']]],
+  ['_24response_10',['$response',['../client_8php.html#af4b6fb1bbc77ccc05f10da3b16935b99',1,'client.php']]],
+  ['_24result_11',['$result',['../index_8php.html#a112ef069ddc0454086e3d1e6d8d55d07',1,'$result():&#160;index.php'],['../tabela_8php.html#a112ef069ddc0454086e3d1e6d8d55d07',1,'$result():&#160;tabela.php'],['../zeravotos_8php.html#a112ef069ddc0454086e3d1e6d8d55d07',1,'$result():&#160;zeravotos.php']]],
+  ['_24sql_12',['$sql',['../index_8php.html#a047170d6020a882807665812a27e2525',1,'$sql():&#160;index.php'],['../tabela_8php.html#a047170d6020a882807665812a27e2525',1,'$sql():&#160;tabela.php'],['../zeravotos_8php.html#a047170d6020a882807665812a27e2525',1,'$sql():&#160;zeravotos.php']]],
+  ['_24url_13',['$url',['../client_8php.html#acf215f34a917d014776ce684a9ee8909',1,'client.php']]],
+  ['_24username_14',['$username',['../conexao_8php.html#a0eb82aa5f81cf845de4b36cd653c42cf',1,'conexao.php']]],
+  ['_24vendordir_15',['$vendorDir',['../autoload__classmap_8php.html#a7fbc3633c79d7461383710e09d497fb0',1,'$vendorDir():&#160;autoload_classmap.php'],['../autoload__files_8php.html#a7fbc3633c79d7461383710e09d497fb0',1,'$vendorDir():&#160;autoload_files.php'],['../autoload__namespaces_8php.html#a7fbc3633c79d7461383710e09d497fb0',1,'$vendorDir():&#160;autoload_namespaces.php'],['../autoload__psr4_8php.html#a7fbc3633c79d7461383710e09d497fb0',1,'$vendorDir():&#160;autoload_psr4.php']]]
+];

@@ -1,0 +1,79 @@
+\hypertarget{classApp_1_1Services_1_1UserService}{}\doxysection{User\+Service Class Reference}
+\label{classApp_1_1Services_1_1UserService}\index{UserService@{UserService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_1_1Services_1_1UserService_aa2349c4188f0c5af9109ec85e7991538}{get}} (\$id=null)
+\item 
+\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a84a947dcd33fd2c817f6d1c7d2ce82ca}{post}} ()
+\item 
+\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a842e4774e3b3601a005b995c02f7e883}{update}} ()
+\item 
+\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a13bdffdd926f26b825ea57066334ff01}{delete}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classApp_1_1Services_1_1UserService_a13bdffdd926f26b825ea57066334ff01}\label{classApp_1_1Services_1_1UserService_a13bdffdd926f26b825ea57066334ff01}} 
+\index{UserService@{UserService}!delete@{delete}}
+\index{delete@{delete}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30         \{}
+\DoxyCodeLine{31             }
+\DoxyCodeLine{32         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classApp_1_1Services_1_1UserService_aa2349c4188f0c5af9109ec85e7991538}\label{classApp_1_1Services_1_1UserService_aa2349c4188f0c5af9109ec85e7991538}} 
+\index{UserService@{UserService}!get@{get}}
+\index{get@{get}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily get (\begin{DoxyParamCaption}\item[{}]{\$id = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9         \{}
+\DoxyCodeLine{10             \textcolor{keywordflow}{if} (\$id) \{}
+\DoxyCodeLine{11                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_a985323621cbcb27c8b09c616542a5f08}{User::select}}(\$id);}
+\DoxyCodeLine{12             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{13                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_a56f3678a8fc6417057c9c249ee786094}{User::selectAll}}();}
+\DoxyCodeLine{14             \}}
+\DoxyCodeLine{15         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classApp_1_1Services_1_1UserService_a84a947dcd33fd2c817f6d1c7d2ce82ca}\label{classApp_1_1Services_1_1UserService_a84a947dcd33fd2c817f6d1c7d2ce82ca}} 
+\index{UserService@{UserService}!post@{post}}
+\index{post@{post}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily post (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18         \{}
+\DoxyCodeLine{19             \$data = \$\_POST;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21             \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_ab6aaf204745676faba4c597ad7bb7e14}{User::insert}}(\$data);}
+\DoxyCodeLine{22         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classApp_1_1Services_1_1UserService_a842e4774e3b3601a005b995c02f7e883}\label{classApp_1_1Services_1_1UserService_a842e4774e3b3601a005b995c02f7e883}} 
+\index{UserService@{UserService}!update@{update}}
+\index{update@{update}!UserService@{UserService}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25         \{}
+\DoxyCodeLine{26             }
+\DoxyCodeLine{27         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/\+App/\+Services/\mbox{\hyperlink{UserService_8php}{User\+Service.\+php}}\end{DoxyCompactItemize}

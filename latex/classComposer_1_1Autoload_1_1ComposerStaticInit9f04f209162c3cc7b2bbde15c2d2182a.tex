@@ -1,0 +1,89 @@
+\hypertarget{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}{}\doxysection{Composer\+Static\+Init9f04f209162c3cc7b2bbde15c2d2182a Class Reference}
+\label{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}\index{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a43dabec9d94d3a81ef6434b0377bf161}{get\+Initializer}} (\mbox{\hyperlink{classComposer_1_1Autoload_1_1ClassLoader}{Class\+Loader}} \$loader)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a9590b15215a21e9b42eb546aeef79704}{\$files}}
+\item 
+static \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a8a73e9adb9ac5eb77041801645646ff3}{\$prefix\+Lengths\+Psr4}}
+\item 
+static \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a923378483704151b859f5398efa4cb5b}{\$prefix\+Dirs\+Psr4}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a43dabec9d94d3a81ef6434b0377bf161}\label{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a43dabec9d94d3a81ef6434b0377bf161}} 
+\index{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}!getInitializer@{getInitializer}}
+\index{getInitializer@{getInitializer}!ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}}
+\doxysubsubsection{\texorpdfstring{getInitializer()}{getInitializer()}}
+{\footnotesize\ttfamily static get\+Initializer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComposer_1_1Autoload_1_1ClassLoader}{Class\+Loader}}}]{\$loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29         return \(\backslash\)Closure::bind(\textcolor{keyword}{function} () use (\$loader) \{}
+\DoxyCodeLine{30             \$loader-\/>prefixLengthsPsr4 = \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a8a73e9adb9ac5eb77041801645646ff3}{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a::\$prefixLengthsPsr4}};}
+\DoxyCodeLine{31             \$loader-\/>prefixDirsPsr4 = \mbox{\hyperlink{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a923378483704151b859f5398efa4cb5b}{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a::\$prefixDirsPsr4}};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \}, \textcolor{keyword}{null}, ClassLoader::class);}
+\DoxyCodeLine{34     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a9590b15215a21e9b42eb546aeef79704}\label{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a9590b15215a21e9b42eb546aeef79704}} 
+\index{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}!\$files@{\$files}}
+\index{\$files@{\$files}!ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}}
+\doxysubsubsection{\texorpdfstring{\$files}{$files}}
+{\footnotesize\ttfamily \$files\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'cfe4039aa2a78ca88e07dadb7b1c6126'} => \_\_DIR\_\_ . \textcolor{stringliteral}{'/../..'} . \textcolor{stringliteral}{'/config.php'},}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a923378483704151b859f5398efa4cb5b}\label{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a923378483704151b859f5398efa4cb5b}} 
+\index{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}!\$prefixDirsPsr4@{\$prefixDirsPsr4}}
+\index{\$prefixDirsPsr4@{\$prefixDirsPsr4}!ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}}
+\doxysubsubsection{\texorpdfstring{\$prefixDirsPsr4}{$prefixDirsPsr4}}
+{\footnotesize\ttfamily \$prefix\+Dirs\+Psr4\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{stringliteral}{'App\(\backslash\)\(\backslash\)'} => }
+\DoxyCodeLine{        array (}
+\DoxyCodeLine{            0 => \_\_DIR\_\_ . \textcolor{stringliteral}{'/../..'} . \textcolor{stringliteral}{'/App'},}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a8a73e9adb9ac5eb77041801645646ff3}\label{classComposer_1_1Autoload_1_1ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a_a8a73e9adb9ac5eb77041801645646ff3}} 
+\index{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}!\$prefixLengthsPsr4@{\$prefixLengthsPsr4}}
+\index{\$prefixLengthsPsr4@{\$prefixLengthsPsr4}!ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a@{ComposerStaticInit9f04f209162c3cc7b2bbde15c2d2182a}}
+\doxysubsubsection{\texorpdfstring{\$prefixLengthsPsr4}{$prefixLengthsPsr4}}
+{\footnotesize\ttfamily \$prefix\+Lengths\+Psr4\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= array (}
+\DoxyCodeLine{        \textcolor{charliteral}{'A'} => }
+\DoxyCodeLine{        array (}
+\DoxyCodeLine{            \textcolor{stringliteral}{'App\(\backslash\)\(\backslash\)'} => 4,}
+\DoxyCodeLine{        ),}
+\DoxyCodeLine{    )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+api/vendor/composer/\mbox{\hyperlink{autoload__static_8php}{autoload\+\_\+static.\+php}}\end{DoxyCompactItemize}
