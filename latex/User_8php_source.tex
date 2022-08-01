@@ -1,0 +1,60 @@
+\hypertarget{User_8php_source}{}\doxysection{User.\+php}
+\label{User_8php_source}\index{api/App/Models/User.php@{api/App/Models/User.php}}
+\mbox{\hyperlink{User_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00002}\mbox{\hyperlink{namespaceApp_1_1Models}{00002}}     \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceApp_1_1Models}{App\(\backslash\)Models}};}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00004}\mbox{\hyperlink{classApp_1_1Models_1_1User}{00004}}     \textcolor{keyword}{class }\mbox{\hyperlink{classApp_1_1Models_1_1User}{User}}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00005}00005     \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00006}00006         \textcolor{keyword}{private} \textcolor{keyword}{static} \$table = \textcolor{stringliteral}{'candidatos'};}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00008}\mbox{\hyperlink{classApp_1_1Models_1_1User_a985323621cbcb27c8b09c616542a5f08}{00008}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{classApp_1_1Models_1_1User_a985323621cbcb27c8b09c616542a5f08}{select}}(\textcolor{keywordtype}{int} \$id) \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00009}00009             \$connPdo = new \(\backslash\)PDO(\mbox{\hyperlink{config_8php_ae10fb4cabf8d5e8ad5e2b33aab71017a}{DBDRIVE}}.\textcolor{stringliteral}{': host='}.\mbox{\hyperlink{config_8php_a40edb9274f7711736cc3ee12d2e5ddba}{DBHOST}}.\textcolor{stringliteral}{'; dbname='}.\mbox{\hyperlink{config_8php_af7d219badcc93cc3a13a604c769542bc}{DBNAME}}, \mbox{\hyperlink{config_8php_a221f39b0b526c043e3a1ade2dd56a70e}{DBUSER}}, \mbox{\hyperlink{config_8php_add7bef9fbed1ad1fa386dcb65fd5d813}{DBPASS}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00011}00011             \mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{'SELECT * FROM '}.self::\$table.\textcolor{stringliteral}{' WHERE id = :id'};}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00012}00012             \$stmt = \$connPdo-\/>prepare(\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00013}00013             \$stmt-\/>bindValue(\textcolor{stringliteral}{':id'}, \$id);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00014}00014             \$stmt-\/>execute();}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00016}00016             \textcolor{keywordflow}{if} (\$stmt-\/>rowCount() > 0) \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00017}00017                 \textcolor{keywordflow}{return} \$stmt-\/>fetch(\(\backslash\)PDO::FETCH\_ASSOC);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00018}00018             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00019}00019                 \textcolor{keywordflow}{throw} new \(\backslash\)Exception(\textcolor{stringliteral}{"{}Nenhum usuário encontrado!"{}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00020}00020             \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00021}00021         \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00023}\mbox{\hyperlink{classApp_1_1Models_1_1User_a56f3678a8fc6417057c9c249ee786094}{00023}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{classApp_1_1Models_1_1User_a56f3678a8fc6417057c9c249ee786094}{selectAll}}() \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00024}00024             \$connPdo = new \(\backslash\)PDO(\mbox{\hyperlink{config_8php_ae10fb4cabf8d5e8ad5e2b33aab71017a}{DBDRIVE}}.\textcolor{stringliteral}{': host='}.\mbox{\hyperlink{config_8php_a40edb9274f7711736cc3ee12d2e5ddba}{DBHOST}}.\textcolor{stringliteral}{'; dbname='}.\mbox{\hyperlink{config_8php_af7d219badcc93cc3a13a604c769542bc}{DBNAME}}, \mbox{\hyperlink{config_8php_a221f39b0b526c043e3a1ade2dd56a70e}{DBUSER}}, \mbox{\hyperlink{config_8php_add7bef9fbed1ad1fa386dcb65fd5d813}{DBPASS}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00026}00026             \mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{'SELECT * FROM '}.self::\$table;}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00027}00027             \$stmt = \$connPdo-\/>prepare(\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00028}00028             \$stmt-\/>execute();}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00030}00030             \textcolor{keywordflow}{if} (\$stmt-\/>rowCount() > 0) \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00031}00031                 \textcolor{keywordflow}{return} \$stmt-\/>fetchAll(\(\backslash\)PDO::FETCH\_ASSOC);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00032}00032             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00033}00033                 \textcolor{keywordflow}{throw} new \(\backslash\)Exception(\textcolor{stringliteral}{"{}Nenhum usuário encontrado!"{}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00034}00034             \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00037}\mbox{\hyperlink{classApp_1_1Models_1_1User_ab6aaf204745676faba4c597ad7bb7e14}{00037}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{function} \mbox{\hyperlink{classApp_1_1Models_1_1User_ab6aaf204745676faba4c597ad7bb7e14}{insert}}(\$data)}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00039}00039             \$connPdo = new \(\backslash\)PDO(\mbox{\hyperlink{config_8php_ae10fb4cabf8d5e8ad5e2b33aab71017a}{DBDRIVE}}.\textcolor{stringliteral}{': host='}.\mbox{\hyperlink{config_8php_a40edb9274f7711736cc3ee12d2e5ddba}{DBHOST}}.\textcolor{stringliteral}{'; dbname='}.\mbox{\hyperlink{config_8php_af7d219badcc93cc3a13a604c769542bc}{DBNAME}}, \mbox{\hyperlink{config_8php_a221f39b0b526c043e3a1ade2dd56a70e}{DBUSER}}, \mbox{\hyperlink{config_8php_add7bef9fbed1ad1fa386dcb65fd5d813}{DBPASS}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00041}00041             \mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{'INSERT INTO '}.self::\$table.\textcolor{stringliteral}{' (email, password, name) VALUES (:em, :pa, :na)'};}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00042}00042             \$stmt = \$connPdo-\/>prepare(\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00043}00043             \$stmt-\/>bindValue(\textcolor{stringliteral}{':em'}, \$data[\textcolor{stringliteral}{'email'}]);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00044}00044             \$stmt-\/>bindValue(\textcolor{stringliteral}{':pa'}, \$data[\textcolor{stringliteral}{'password'}]);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00045}00045             \$stmt-\/>bindValue(\textcolor{stringliteral}{':na'}, \$data[\textcolor{stringliteral}{'name'}]);}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00046}00046             \$stmt-\/>execute();}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00048}00048             \textcolor{keywordflow}{if} (\$stmt-\/>rowCount() > 0) \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00049}00049                 \textcolor{keywordflow}{return} \textcolor{stringliteral}{'Usuário(a) inserido com sucesso!'};}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00050}00050             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00051}00051                 \textcolor{keywordflow}{throw} new \(\backslash\)Exception(\textcolor{stringliteral}{"{}Falha ao inserir usuário(a)!"{}});}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00052}00052             \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00053}00053         \}}
+\DoxyCodeLine{\Hypertarget{User_8php_source_l00054}00054     \}}
+
+\end{DoxyCode}

@@ -83,7 +83,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13bdffdd926f26b825ea57066334ff01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApp_1_1Services_1_1UserService.html#a13bdffdd926f26b825ea57066334ff01">delete</a> ()</td></tr>
 <tr class="separator:a13bdffdd926f26b825ea57066334ff01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="UserService_8php_source.html#l00006">6</a> of file <a class="el" href="UserService_8php_source.html">UserService.php</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a13bdffdd926f26b825ea57066334ff01" name="a13bdffdd926f26b825ea57066334ff01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13bdffdd926f26b825ea57066334ff01">&#9670;&nbsp;</a></span>delete()</h2>
 
@@ -98,6 +101,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserService_8php_source.html#l00029">29</a> of file <a class="el" href="UserService_8php_source.html">UserService.php</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>        {</div>
 <div class="line"><span class="lineno">   31</span>            </div>
 <div class="line"><span class="lineno">   32</span>        }</div>
@@ -119,6 +124,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserService_8php_source.html#l00008">8</a> of file <a class="el" href="UserService_8php_source.html">UserService.php</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    9</span>        {</div>
 <div class="line"><span class="lineno">   10</span>            <span class="keywordflow">if</span> ($id) {</div>
 <div class="line"><span class="lineno">   11</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="classApp_1_1Models_1_1User.html#a985323621cbcb27c8b09c616542a5f08">User::select</a>($id);</div>
@@ -126,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   13</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="classApp_1_1Models_1_1User.html#a56f3678a8fc6417057c9c249ee786094">User::selectAll</a>();</div>
 <div class="line"><span class="lineno">   14</span>            }</div>
 <div class="line"><span class="lineno">   15</span>        }</div>
-<div class="ttc" id="aclassApp_1_1Models_1_1User_html_a56f3678a8fc6417057c9c249ee786094"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#a56f3678a8fc6417057c9c249ee786094">App\Models\User\selectAll</a></div><div class="ttdeci">static selectAll()</div><div class="ttdef"><b>Definition:</b> User.php:23</div></div>
-<div class="ttc" id="aclassApp_1_1Models_1_1User_html_a985323621cbcb27c8b09c616542a5f08"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#a985323621cbcb27c8b09c616542a5f08">App\Models\User\select</a></div><div class="ttdeci">static select(int $id)</div><div class="ttdef"><b>Definition:</b> User.php:8</div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1User_html_a56f3678a8fc6417057c9c249ee786094"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#a56f3678a8fc6417057c9c249ee786094">App\Models\User\selectAll</a></div><div class="ttdeci">static selectAll()</div><div class="ttdef"><b>Definition:</b> <a href="User_8php_source.html#l00023">User.php:23</a></div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1User_html_a985323621cbcb27c8b09c616542a5f08"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#a985323621cbcb27c8b09c616542a5f08">App\Models\User\select</a></div><div class="ttdeci">static select(int $id)</div><div class="ttdef"><b>Definition:</b> <a href="User_8php_source.html#l00008">User.php:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -145,12 +152,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserService_8php_source.html#l00017">17</a> of file <a class="el" href="UserService_8php_source.html">UserService.php</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>        {</div>
 <div class="line"><span class="lineno">   19</span>            $data = $_POST;</div>
 <div class="line"><span class="lineno">   20</span> </div>
 <div class="line"><span class="lineno">   21</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classApp_1_1Models_1_1User.html#ab6aaf204745676faba4c597ad7bb7e14">User::insert</a>($data);</div>
 <div class="line"><span class="lineno">   22</span>        }</div>
-<div class="ttc" id="aclassApp_1_1Models_1_1User_html_ab6aaf204745676faba4c597ad7bb7e14"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#ab6aaf204745676faba4c597ad7bb7e14">App\Models\User\insert</a></div><div class="ttdeci">static insert($data)</div><div class="ttdef"><b>Definition:</b> User.php:37</div></div>
+<div class="ttc" id="aclassApp_1_1Models_1_1User_html_ab6aaf204745676faba4c597ad7bb7e14"><div class="ttname"><a href="classApp_1_1Models_1_1User.html#ab6aaf204745676faba4c597ad7bb7e14">App\Models\User\insert</a></div><div class="ttdeci">static insert($data)</div><div class="ttdef"><b>Definition:</b> <a href="User_8php_source.html#l00037">User.php:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -168,6 +177,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="UserService_8php_source.html#l00024">24</a> of file <a class="el" href="UserService_8php_source.html">UserService.php</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>        {</div>
 <div class="line"><span class="lineno">   26</span>            </div>
 <div class="line"><span class="lineno">   27</span>        }</div>
@@ -175,7 +186,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>api/App/Services/<a class="el" href="UserService_8php.html">UserService.php</a></li>
+<li>api/App/Services/<a class="el" href="UserService_8php_source.html">UserService.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

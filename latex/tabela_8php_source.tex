@@ -1,0 +1,187 @@
+\hypertarget{tabela_8php_source}{}\doxysection{tabela.\+php}
+\mbox{\hyperlink{tabela_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00005}00005 <!DOCTYPE html>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00006}00006 <html lang=\textcolor{stringliteral}{"{}en"{}} dir=\textcolor{stringliteral}{"{}ltr"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00007}00007   <head>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00008}00008     <meta charset=\textcolor{stringliteral}{"{}utf-\/8"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00009}00009     <title></title>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00010}00010     <style>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00011}00011     @\textcolor{keyword}{import} url(\textcolor{stringliteral}{'https://fonts.googleapis.com/css2?family=Inter:wght@200\&family=Patrick+Hand\&display=swap'});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00013}00013 * \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00014}00014     padding: 0;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00015}00015     margin: 0;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00016}00016     box-\/sizing: border-\/box;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00017}00017     font-\/family: \textcolor{stringliteral}{'Patrick Hand'}, cursive;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00018}00018     color: rgb(238, 236, 236);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00021}00021 body \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00022}00022     width: 100\%;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00023}00023     height: 100vh;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00024}00024     background-\/image: linear-\/gradient(to right bottom, \#828282, \#839fb5, \#5fc5d0, \#73e7b8, \#d6fb84);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00025}00025     display: flex;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00026}00026     align-\/items: center;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00027}00027     justify-\/content: space-\/around;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00028}00028     flex-\/direction: row;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00031}00031 \textcolor{preprocessor}{\#table\{}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00032}00032     text-\/align: center;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00033}00033     border-\/collapse: collapse;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00036}00036 .table-\/rows \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00037}00037     transition: all 0.3s ease;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00038}00038     cursor: pointer;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00041}00041 .items \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00042}00042     padding: 15px 35px;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00043}00043     font-\/size: 19px;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00044}00044     border-\/bottom: 1px solid rgba(255, 255, 255, 0.7);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00047}00047 .icons \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00048}00048     width: 15px;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00049}00049     height: 15px;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00050}00050     display: \textcolor{keyword}{inline}-\/block;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00053}00053 .dec \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00054}00054     fill: rgba(239, 49, 49, 0.56);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00055}00055     opacity: 0;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00056}00056     transition: all 0.5s ease;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00059}00059 .inc \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00060}00060     fill: rgba(110, 227, 89, 0.56);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00061}00061     opacity: 0;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00062}00062     transition: all 0.5s ease;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00063}00063 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00065}00065 .table-\/rows:nth-\/child(even) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00066}00066     background-\/color: rgba(95, 197, 208, 0.21);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00069}00069 .table-\/rows:nth-\/child(odd) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00070}00070     background-\/color: rgba(55, 131, 138, 0.17);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00073}00073 .header-\/row \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00074}00074     background-\/color: rgba(255, 255, 255, 0.31);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00077}00077 .table-\/rows:hover \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00078}00078     background-\/color: \#652479;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00079}00079     transform: scale(1.1);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00082}00082 .table-\/rows:hover svg \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00083}00083     opacity: 1;}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00084}00084     transform: scale(1.2);}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00085}00085 \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00087}00087     </style>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00088}00088   </head>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00089}00089   <form action=\textcolor{stringliteral}{"{}zeravotos.php"{}} method=\textcolor{stringliteral}{"{}post"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00090}00090   <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}"{}} style=\textcolor{stringliteral}{"{}display:flex; flex-\/direction:row; justify-\/content:center; margin-\/top:18px;"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00091}00091       <button type=\textcolor{stringliteral}{"{}submit"{}} name=\textcolor{stringliteral}{"{}button"{}}  style=\textcolor{stringliteral}{"{}padding:10px; color:black;"{}}> LIMPAR </button>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00092}00092   </div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00093}00093   </form>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00094}00094   <body>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00095}00095     <div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00096}00096     <h2>Vereadores</h2>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00097}00097 <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}table-\/section"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00098}00098     <table \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}table"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00099}00099         <tr \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/row"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00100}00100             <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Votos</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00101}00101             <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Nome</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00102}00102             <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Numero</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00103}00103             <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Partido</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00104}00104         </tr>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00106}00106           <?php}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00107}00107           header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Origin: *"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00108}00108           header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Methods: POST"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00109}00109 include(\textcolor{stringliteral}{"{}conexao.php"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00110}\mbox{\hyperlink{tabela_8php_a047170d6020a882807665812a27e2525}{00110}}           \mbox{\hyperlink{tabela_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{"{}SELECT * from candidatos where tipo = 0 order by quantidade\_votos DESC"{}};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00112}\mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{00112}}           \mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}}-\/>query(\mbox{\hyperlink{tabela_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00114}00114             \textcolor{keywordflow}{if}(\mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>num\_rows > 0) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00115}00115               \$output = array();}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00121}00121               \textcolor{keywordflow}{while}(\$row = \mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_assoc()) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00122}00122                 echo \textcolor{stringliteral}{'<tr class="{}table-\/rows"{}>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00123}00123                 echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'quantidade\_votos'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00124}00124                 echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'nome'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00125}00125                 echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'numero\_candidato'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00126}00126                 echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'partido'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00127}00127                 echo \textcolor{stringliteral}{'</tr>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00128}00128                 \textcolor{comment}{//\$output[] = array( 'idcandidatos' => \$row['idcandidatos'], 'quantidade\_votos' => \$row['quantidade\_votos'], 'numero\_candidato' => \$row['numero\_candidato'], 'nome' => \$row['nome'], 'partido' => \$row['partido'], 'foto' => \$row['foto'], 'tipo' => \$row['tipo'] );}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00129}00129               \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00130}00130             \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00132}00132           ?>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00136}00136     </table>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00137}00137 </div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00138}00138 </div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00139}00139 <div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00140}00140 <h2>Prefeitos</h2>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00141}00141 <div \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}table-\/section"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00142}00142 <table \textcolor{keywordtype}{id}=\textcolor{stringliteral}{"{}table"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00143}00143     <tr \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/row"{}}>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00144}00144         <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Votos</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00145}00145         <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Nome</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00146}00146         <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Numero</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00147}00147         <th \textcolor{keyword}{class}=\textcolor{stringliteral}{"{}header-\/item items"{}}>Partido</th>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00148}00148     </tr>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00150}00150       <?php}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00151}00151       header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Origin: *"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00152}00152       header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Methods: POST"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00153}00153       include(\textcolor{stringliteral}{"{}conexao.php"{}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00155}00155       \mbox{\hyperlink{tabela_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{"{}SELECT * from candidatos where tipo = 1 order by quantidade\_votos DESC"{}};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00157}00157       \mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}}-\/>query(\mbox{\hyperlink{tabela_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00159}00159       \textcolor{keywordflow}{if} (\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_METHOD'}] === \textcolor{stringliteral}{'GET'}) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00161}00161         \textcolor{keywordflow}{if}(\mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>num\_rows > 0) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00162}00162           \$output = array();}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00164}00164           \textcolor{keywordflow}{while}(\$row = \mbox{\hyperlink{tabela_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_assoc()) \{}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00165}00165             echo \textcolor{stringliteral}{'<tr class="{}table-\/rows"{}>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00166}00166             echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'quantidade\_votos'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00167}00167             echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'nome'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00168}00168             echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'numero\_candidato'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00169}00169             echo \textcolor{stringliteral}{'<td class="{}items"{}>'}.\$row[\textcolor{stringliteral}{'partido'}].\textcolor{stringliteral}{'</td>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00170}00170             echo \textcolor{stringliteral}{'</tr>'};}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00171}00171             \textcolor{comment}{//\$output[] = array( 'idcandidatos' => \$row['idcandidatos'], 'quantidade\_votos' => \$row['quantidade\_votos'], 'numero\_candidato' => \$row['numero\_candidato'], 'nome' => \$row['nome'], 'partido' => \$row['partido'], 'foto' => \$row['foto'], 'tipo' => \$row['tipo'] );}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00172}00172           \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00173}00173         \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00175}00175       \}}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00179}00179       ?>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00181}00181 </table>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00182}00182 </div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00183}00183 </div>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00185}00185   </body>}
+\DoxyCodeLine{\Hypertarget{tabela_8php_source_l00186}00186 </html>}
+
+\end{DoxyCode}

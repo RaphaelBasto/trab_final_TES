@@ -1,0 +1,44 @@
+\hypertarget{index_8php_source}{}\doxysection{index.\+php}
+\mbox{\hyperlink{index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00002}00002 header(\textcolor{stringliteral}{'Content-\/type: application/json'});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00003}00003 header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Origin: *"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00004}00004 header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Methods: POST"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00005}00005 include(\textcolor{stringliteral}{"{}conexao.php"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00007}\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{00007}} \mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{"{}SELECT * from candidatos"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00009}\mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{00009}} \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}}-\/>query(\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00015}00015 \textcolor{keywordflow}{if} (\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_METHOD'}] === \textcolor{stringliteral}{'GET'}) \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00017}00017   \textcolor{keywordflow}{if}(\mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>num\_rows > 0) \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00018}00018     \$output = array();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00020}00020     \textcolor{keywordflow}{while}(\$row = \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}}-\/>fetch\_assoc()) \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00022}00022       \$output[] = array( \textcolor{stringliteral}{'idcandidatos'} => \$row[\textcolor{stringliteral}{'idcandidatos'}], \textcolor{stringliteral}{'quantidade\_votos'} => \$row[\textcolor{stringliteral}{'quantidade\_votos'}], \textcolor{stringliteral}{'numero\_candidato'} => \$row[\textcolor{stringliteral}{'numero\_candidato'}], \textcolor{stringliteral}{'nome'} => \$row[\textcolor{stringliteral}{'nome'}], \textcolor{stringliteral}{'partido'} => \$row[\textcolor{stringliteral}{'partido'}], \textcolor{stringliteral}{'foto'} => \$row[\textcolor{stringliteral}{'foto'}], \textcolor{stringliteral}{'tipo'} => \$row[\textcolor{stringliteral}{'tipo'}] );}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00025}00025     echo json\_encode(\$output, JSON\_UNESCAPED\_UNICODE);}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00026}00026   \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00028}00028 \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00034}00034 \textcolor{keywordflow}{if} (\$\_SERVER[\textcolor{stringliteral}{'REQUEST\_METHOD'}] === \textcolor{stringliteral}{'POST'}) \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00036}00036   \textcolor{keywordflow}{if}(isset( \$\_GET[\textcolor{stringliteral}{'voto'}]))\{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00037}00037     \mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}} = \textcolor{stringliteral}{"{}update candidatos set quantidade\_votos = quantidade\_votos + 1 where numero\_candidato="{}}.\$\_GET[\textcolor{stringliteral}{'voto'}];}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00039}00039     \mbox{\hyperlink{index_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result}} = \mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}}-\/>query(\mbox{\hyperlink{index_8php_a047170d6020a882807665812a27e2525}{\$sql}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00040}00040   \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00047}00047 ?>}
+
+\end{DoxyCode}

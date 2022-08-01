@@ -1,0 +1,39 @@
+\hypertarget{UserService_8php_source}{}\doxysection{User\+Service.\+php}
+\label{UserService_8php_source}\index{api/App/Services/UserService.php@{api/App/Services/UserService.php}}
+\mbox{\hyperlink{UserService_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00002}\mbox{\hyperlink{namespaceApp_1_1Services}{00002}}     \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceApp_1_1Services}{App\(\backslash\)Services}};}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00004}00004     use \mbox{\hyperlink{classApp_1_1Models_1_1User}{App\(\backslash\)Models\(\backslash\)User}};}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00006}\mbox{\hyperlink{classApp_1_1Services_1_1UserService}{00006}}     \textcolor{keyword}{class }\mbox{\hyperlink{classApp_1_1Services_1_1UserService}{UserService}}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00007}00007     \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00008}\mbox{\hyperlink{classApp_1_1Services_1_1UserService_aa2349c4188f0c5af9109ec85e7991538}{00008}}         \textcolor{keyword}{public} \textcolor{keyword}{function} \textcolor{keyword}{get}(\$id = \textcolor{keyword}{null}) }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00009}00009         \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00010}00010             \textcolor{keywordflow}{if} (\$id) \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00011}00011                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_a985323621cbcb27c8b09c616542a5f08}{User::select}}(\$id);}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00012}00012             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00013}00013                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_a56f3678a8fc6417057c9c249ee786094}{User::selectAll}}();}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00014}00014             \}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00015}00015         \}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00017}\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a84a947dcd33fd2c817f6d1c7d2ce82ca}{00017}}         \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{classApp_1_1Services_1_1UserService_a84a947dcd33fd2c817f6d1c7d2ce82ca}{post}}() }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00018}00018         \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00019}00019             \$data = \$\_POST;}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00021}00021             \textcolor{keywordflow}{return} \mbox{\hyperlink{classApp_1_1Models_1_1User_ab6aaf204745676faba4c597ad7bb7e14}{User::insert}}(\$data);}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00022}00022         \}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00024}\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a842e4774e3b3601a005b995c02f7e883}{00024}}         \textcolor{keyword}{public} \textcolor{keyword}{function} \mbox{\hyperlink{classApp_1_1Services_1_1UserService_a842e4774e3b3601a005b995c02f7e883}{update}}() }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00026}00026             }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00029}\mbox{\hyperlink{classApp_1_1Services_1_1UserService_a13bdffdd926f26b825ea57066334ff01}{00029}}         \textcolor{keyword}{public} \textcolor{keyword}{function} \textcolor{keyword}{delete}() }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00030}00030         \{}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00031}00031             }
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00032}00032         \}}
+\DoxyCodeLine{\Hypertarget{UserService_8php_source_l00033}00033     \}}
+
+\end{DoxyCode}

@@ -74,6 +74,10 @@ Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}
 \end{DoxySeeAlso}
 
 
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00043}{43}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a5c0f76dc6dde6d1209d78b2fa27db0af}\label{classComposer_1_1Autoload_1_1ClassLoader_a5c0f76dc6dde6d1209d78b2fa27db0af}} 
 \index{ClassLoader@{ClassLoader}!add@{add}}
@@ -93,42 +97,46 @@ bool & {\em \$prepend} & Whether to prepend the directories \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00109}{109}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{110     \{}
-\DoxyCodeLine{111         \textcolor{keywordflow}{if} (!\$prefix) \{}
-\DoxyCodeLine{112             \textcolor{keywordflow}{if} (\$prepend) \{}
-\DoxyCodeLine{113                 \$this-\/>fallbackDirsPsr0 = array\_merge(}
-\DoxyCodeLine{114                     (array) \$paths,}
-\DoxyCodeLine{115                     \$this-\/>fallbackDirsPsr0}
-\DoxyCodeLine{116                 );}
-\DoxyCodeLine{117             \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{118                 \$this-\/>fallbackDirsPsr0 = array\_merge(}
-\DoxyCodeLine{119                     \$this-\/>fallbackDirsPsr0,}
-\DoxyCodeLine{120                     (array) \$paths}
-\DoxyCodeLine{121                 );}
-\DoxyCodeLine{122             \}}
-\DoxyCodeLine{123 }
-\DoxyCodeLine{124             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{125         \}}
-\DoxyCodeLine{126 }
-\DoxyCodeLine{127         \$first = \$prefix[0];}
-\DoxyCodeLine{128         \textcolor{keywordflow}{if} (!isset(\$this-\/>prefixesPsr0[\$first][\$prefix])) \{}
-\DoxyCodeLine{129             \$this-\/>prefixesPsr0[\$first][\$prefix] = (array) \$paths;}
-\DoxyCodeLine{130 }
-\DoxyCodeLine{131             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{132         \}}
-\DoxyCodeLine{133         \textcolor{keywordflow}{if} (\$prepend) \{}
-\DoxyCodeLine{134             \$this-\/>prefixesPsr0[\$first][\$prefix] = array\_merge(}
-\DoxyCodeLine{135                 (array) \$paths,}
-\DoxyCodeLine{136                 \$this-\/>prefixesPsr0[\$first][\$prefix]}
-\DoxyCodeLine{137             );}
-\DoxyCodeLine{138         \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{139             \$this-\/>prefixesPsr0[\$first][\$prefix] = array\_merge(}
-\DoxyCodeLine{140                 \$this-\/>prefixesPsr0[\$first][\$prefix],}
-\DoxyCodeLine{141                 (array) \$paths}
-\DoxyCodeLine{142             );}
-\DoxyCodeLine{143         \}}
-\DoxyCodeLine{144     \}}
+\DoxyCodeLine{00110     \{}
+\DoxyCodeLine{00111         \textcolor{keywordflow}{if} (!\$prefix) \{}
+\DoxyCodeLine{00112             \textcolor{keywordflow}{if} (\$prepend) \{}
+\DoxyCodeLine{00113                 \$this-\/>fallbackDirsPsr0 = array\_merge(}
+\DoxyCodeLine{00114                     (array) \$paths,}
+\DoxyCodeLine{00115                     \$this-\/>fallbackDirsPsr0}
+\DoxyCodeLine{00116                 );}
+\DoxyCodeLine{00117             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00118                 \$this-\/>fallbackDirsPsr0 = array\_merge(}
+\DoxyCodeLine{00119                     \$this-\/>fallbackDirsPsr0,}
+\DoxyCodeLine{00120                     (array) \$paths}
+\DoxyCodeLine{00121                 );}
+\DoxyCodeLine{00122             \}}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00125         \}}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127         \$first = \$prefix[0];}
+\DoxyCodeLine{00128         \textcolor{keywordflow}{if} (!isset(\$this-\/>prefixesPsr0[\$first][\$prefix])) \{}
+\DoxyCodeLine{00129             \$this-\/>prefixesPsr0[\$first][\$prefix] = (array) \$paths;}
+\DoxyCodeLine{00130 }
+\DoxyCodeLine{00131             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00132         \}}
+\DoxyCodeLine{00133         \textcolor{keywordflow}{if} (\$prepend) \{}
+\DoxyCodeLine{00134             \$this-\/>prefixesPsr0[\$first][\$prefix] = array\_merge(}
+\DoxyCodeLine{00135                 (array) \$paths,}
+\DoxyCodeLine{00136                 \$this-\/>prefixesPsr0[\$first][\$prefix]}
+\DoxyCodeLine{00137             );}
+\DoxyCodeLine{00138         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00139             \$this-\/>prefixesPsr0[\$first][\$prefix] = array\_merge(}
+\DoxyCodeLine{00140                 \$this-\/>prefixesPsr0[\$first][\$prefix],}
+\DoxyCodeLine{00141                 (array) \$paths}
+\DoxyCodeLine{00142             );}
+\DoxyCodeLine{00143         \}}
+\DoxyCodeLine{00144     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a164966b8bcb9bf5470152bb5707a28af}\label{classComposer_1_1Autoload_1_1ClassLoader_a164966b8bcb9bf5470152bb5707a28af}} 
@@ -143,14 +151,18 @@ array & {\em \$class\+Map} & Class to filename map \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00092}{92}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{93     \{}
-\DoxyCodeLine{94         \textcolor{keywordflow}{if} (\$this-\/>classMap) \{}
-\DoxyCodeLine{95             \$this-\/>classMap = array\_merge(\$this-\/>classMap, \$classMap);}
-\DoxyCodeLine{96         \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{97             \$this-\/>classMap = \$classMap;}
-\DoxyCodeLine{98         \}}
-\DoxyCodeLine{99     \}}
+\DoxyCodeLine{00093     \{}
+\DoxyCodeLine{00094         \textcolor{keywordflow}{if} (\$this-\/>classMap) \{}
+\DoxyCodeLine{00095             \$this-\/>classMap = array\_merge(\$this-\/>classMap, \$classMap);}
+\DoxyCodeLine{00096         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00097             \$this-\/>classMap = \$classMap;}
+\DoxyCodeLine{00098         \}}
+\DoxyCodeLine{00099     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a264d8845526646ebc3725f219949baca}\label{classComposer_1_1Autoload_1_1ClassLoader_a264d8845526646ebc3725f219949baca}} 
@@ -176,43 +188,47 @@ bool & {\em \$prepend} & Whether to prepend the directories\\
 \hline
 \end{DoxyExceptions}
 Invalid\+Argument\+Exception 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00156}{156}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{157     \{}
-\DoxyCodeLine{158         \textcolor{keywordflow}{if} (!\$prefix) \{}
-\DoxyCodeLine{159             \textcolor{comment}{// Register directories for the root namespace.}}
-\DoxyCodeLine{160             \textcolor{keywordflow}{if} (\$prepend) \{}
-\DoxyCodeLine{161                 \$this-\/>fallbackDirsPsr4 = array\_merge(}
-\DoxyCodeLine{162                     (array) \$paths,}
-\DoxyCodeLine{163                     \$this-\/>fallbackDirsPsr4}
-\DoxyCodeLine{164                 );}
-\DoxyCodeLine{165             \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{166                 \$this-\/>fallbackDirsPsr4 = array\_merge(}
-\DoxyCodeLine{167                     \$this-\/>fallbackDirsPsr4,}
-\DoxyCodeLine{168                     (array) \$paths}
-\DoxyCodeLine{169                 );}
-\DoxyCodeLine{170             \}}
-\DoxyCodeLine{171         \} elseif (!isset(\$this-\/>prefixDirsPsr4[\$prefix])) \{}
-\DoxyCodeLine{172             \textcolor{comment}{// Register directories for a new namespace.}}
-\DoxyCodeLine{173             \$length = strlen(\$prefix);}
-\DoxyCodeLine{174             \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} !== \$prefix[\$length -\/ 1]) \{}
-\DoxyCodeLine{175                 \textcolor{keywordflow}{throw} new \(\backslash\)InvalidArgumentException(\textcolor{stringliteral}{"{}A non-\/empty PSR-\/4 prefix must end with a namespace separator."{}});}
-\DoxyCodeLine{176             \}}
-\DoxyCodeLine{177             \$this-\/>prefixLengthsPsr4[\$prefix[0]][\$prefix] = \$length;}
-\DoxyCodeLine{178             \$this-\/>prefixDirsPsr4[\$prefix] = (array) \$paths;}
-\DoxyCodeLine{179         \} elseif (\$prepend) \{}
-\DoxyCodeLine{180             \textcolor{comment}{// Prepend directories for an already registered namespace.}}
-\DoxyCodeLine{181             \$this-\/>prefixDirsPsr4[\$prefix] = array\_merge(}
-\DoxyCodeLine{182                 (array) \$paths,}
-\DoxyCodeLine{183                 \$this-\/>prefixDirsPsr4[\$prefix]}
-\DoxyCodeLine{184             );}
-\DoxyCodeLine{185         \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{186             \textcolor{comment}{// Append directories for an already registered namespace.}}
-\DoxyCodeLine{187             \$this-\/>prefixDirsPsr4[\$prefix] = array\_merge(}
-\DoxyCodeLine{188                 \$this-\/>prefixDirsPsr4[\$prefix],}
-\DoxyCodeLine{189                 (array) \$paths}
-\DoxyCodeLine{190             );}
-\DoxyCodeLine{191         \}}
-\DoxyCodeLine{192     \}}
+\DoxyCodeLine{00157     \{}
+\DoxyCodeLine{00158         \textcolor{keywordflow}{if} (!\$prefix) \{}
+\DoxyCodeLine{00159             \textcolor{comment}{// Register directories for the root namespace.}}
+\DoxyCodeLine{00160             \textcolor{keywordflow}{if} (\$prepend) \{}
+\DoxyCodeLine{00161                 \$this-\/>fallbackDirsPsr4 = array\_merge(}
+\DoxyCodeLine{00162                     (array) \$paths,}
+\DoxyCodeLine{00163                     \$this-\/>fallbackDirsPsr4}
+\DoxyCodeLine{00164                 );}
+\DoxyCodeLine{00165             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00166                 \$this-\/>fallbackDirsPsr4 = array\_merge(}
+\DoxyCodeLine{00167                     \$this-\/>fallbackDirsPsr4,}
+\DoxyCodeLine{00168                     (array) \$paths}
+\DoxyCodeLine{00169                 );}
+\DoxyCodeLine{00170             \}}
+\DoxyCodeLine{00171         \} elseif (!isset(\$this-\/>prefixDirsPsr4[\$prefix])) \{}
+\DoxyCodeLine{00172             \textcolor{comment}{// Register directories for a new namespace.}}
+\DoxyCodeLine{00173             \$length = strlen(\$prefix);}
+\DoxyCodeLine{00174             \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} !== \$prefix[\$length -\/ 1]) \{}
+\DoxyCodeLine{00175                 \textcolor{keywordflow}{throw} new \(\backslash\)InvalidArgumentException(\textcolor{stringliteral}{"{}A non-\/empty PSR-\/4 prefix must end with a namespace separator."{}});}
+\DoxyCodeLine{00176             \}}
+\DoxyCodeLine{00177             \$this-\/>prefixLengthsPsr4[\$prefix[0]][\$prefix] = \$length;}
+\DoxyCodeLine{00178             \$this-\/>prefixDirsPsr4[\$prefix] = (array) \$paths;}
+\DoxyCodeLine{00179         \} elseif (\$prepend) \{}
+\DoxyCodeLine{00180             \textcolor{comment}{// Prepend directories for an already registered namespace.}}
+\DoxyCodeLine{00181             \$this-\/>prefixDirsPsr4[\$prefix] = array\_merge(}
+\DoxyCodeLine{00182                 (array) \$paths,}
+\DoxyCodeLine{00183                 \$this-\/>prefixDirsPsr4[\$prefix]}
+\DoxyCodeLine{00184             );}
+\DoxyCodeLine{00185         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00186             \textcolor{comment}{// Append directories for an already registered namespace.}}
+\DoxyCodeLine{00187             \$this-\/>prefixDirsPsr4[\$prefix] = array\_merge(}
+\DoxyCodeLine{00188                 \$this-\/>prefixDirsPsr4[\$prefix],}
+\DoxyCodeLine{00189                 (array) \$paths}
+\DoxyCodeLine{00190             );}
+\DoxyCodeLine{00191         \}}
+\DoxyCodeLine{00192     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a4f8534c9205630e4b9c61e47ebf2867a}\label{classComposer_1_1Autoload_1_1ClassLoader_a4f8534c9205630e4b9c61e47ebf2867a}} 
@@ -232,40 +248,44 @@ string & {\em \$class} & The name of the class\\
 string$\vert$false The path if found, false otherwise 
 \end{DoxyReturn}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00335}{335}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{336     \{}
-\DoxyCodeLine{337         \textcolor{comment}{// class map lookup}}
-\DoxyCodeLine{338         \textcolor{keywordflow}{if} (isset(\$this-\/>classMap[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}])) \{}
-\DoxyCodeLine{339             \textcolor{keywordflow}{return} \$this-\/>classMap[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}];}
-\DoxyCodeLine{340         \}}
-\DoxyCodeLine{341         \textcolor{keywordflow}{if} (\$this-\/>classMapAuthoritative || isset(\$this-\/>missingClasses[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}])) \{}
-\DoxyCodeLine{342             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{343         \}}
-\DoxyCodeLine{344         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} !== \$this-\/>apcuPrefix) \{}
-\DoxyCodeLine{345             \$file = apcu\_fetch(\$this-\/>apcuPrefix.\$class, \$hit);}
-\DoxyCodeLine{346             \textcolor{keywordflow}{if} (\$hit) \{}
-\DoxyCodeLine{347                 \textcolor{keywordflow}{return} \$file;}
-\DoxyCodeLine{348             \}}
-\DoxyCodeLine{349         \}}
-\DoxyCodeLine{350 }
-\DoxyCodeLine{351         \$file = \$this-\/>findFileWithExtension(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}, \textcolor{stringliteral}{'.php'});}
-\DoxyCodeLine{352 }
-\DoxyCodeLine{353         \textcolor{comment}{// Search for Hack files if we are running on HHVM}}
-\DoxyCodeLine{354         \textcolor{keywordflow}{if} (\textcolor{keyword}{false} === \$file \&\& defined(\textcolor{stringliteral}{'HHVM\_VERSION'})) \{}
-\DoxyCodeLine{355             \$file = \$this-\/>findFileWithExtension(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}, \textcolor{stringliteral}{'.hh'});}
-\DoxyCodeLine{356         \}}
-\DoxyCodeLine{357 }
-\DoxyCodeLine{358         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} !== \$this-\/>apcuPrefix) \{}
-\DoxyCodeLine{359             apcu\_add(\$this-\/>apcuPrefix.\$class, \$file);}
-\DoxyCodeLine{360         \}}
-\DoxyCodeLine{361 }
-\DoxyCodeLine{362         \textcolor{keywordflow}{if} (\textcolor{keyword}{false} === \$file) \{}
-\DoxyCodeLine{363             \textcolor{comment}{// Remember that this class does not exist.}}
-\DoxyCodeLine{364             \$this-\/>missingClasses[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}] = \textcolor{keyword}{true};}
-\DoxyCodeLine{365         \}}
-\DoxyCodeLine{366 }
-\DoxyCodeLine{367         \textcolor{keywordflow}{return} \$file;}
-\DoxyCodeLine{368     \}}
+\DoxyCodeLine{00336     \{}
+\DoxyCodeLine{00337         \textcolor{comment}{// class map lookup}}
+\DoxyCodeLine{00338         \textcolor{keywordflow}{if} (isset(\$this-\/>classMap[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}])) \{}
+\DoxyCodeLine{00339             \textcolor{keywordflow}{return} \$this-\/>classMap[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}];}
+\DoxyCodeLine{00340         \}}
+\DoxyCodeLine{00341         \textcolor{keywordflow}{if} (\$this-\/>classMapAuthoritative || isset(\$this-\/>missingClasses[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}])) \{}
+\DoxyCodeLine{00342             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00343         \}}
+\DoxyCodeLine{00344         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} !== \$this-\/>apcuPrefix) \{}
+\DoxyCodeLine{00345             \$file = apcu\_fetch(\$this-\/>apcuPrefix.\$class, \$hit);}
+\DoxyCodeLine{00346             \textcolor{keywordflow}{if} (\$hit) \{}
+\DoxyCodeLine{00347                 \textcolor{keywordflow}{return} \$file;}
+\DoxyCodeLine{00348             \}}
+\DoxyCodeLine{00349         \}}
+\DoxyCodeLine{00350 }
+\DoxyCodeLine{00351         \$file = \$this-\/>findFileWithExtension(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}, \textcolor{stringliteral}{'.php'});}
+\DoxyCodeLine{00352 }
+\DoxyCodeLine{00353         \textcolor{comment}{// Search for Hack files if we are running on HHVM}}
+\DoxyCodeLine{00354         \textcolor{keywordflow}{if} (\textcolor{keyword}{false} === \$file \&\& defined(\textcolor{stringliteral}{'HHVM\_VERSION'})) \{}
+\DoxyCodeLine{00355             \$file = \$this-\/>findFileWithExtension(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}, \textcolor{stringliteral}{'.hh'});}
+\DoxyCodeLine{00356         \}}
+\DoxyCodeLine{00357 }
+\DoxyCodeLine{00358         \textcolor{keywordflow}{if} (\textcolor{keyword}{null} !== \$this-\/>apcuPrefix) \{}
+\DoxyCodeLine{00359             apcu\_add(\$this-\/>apcuPrefix.\$class, \$file);}
+\DoxyCodeLine{00360         \}}
+\DoxyCodeLine{00361 }
+\DoxyCodeLine{00362         \textcolor{keywordflow}{if} (\textcolor{keyword}{false} === \$file) \{}
+\DoxyCodeLine{00363             \textcolor{comment}{// Remember that this class does not exist.}}
+\DoxyCodeLine{00364             \$this-\/>missingClasses[\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}}] = \textcolor{keyword}{true};}
+\DoxyCodeLine{00365         \}}
+\DoxyCodeLine{00366 }
+\DoxyCodeLine{00367         \textcolor{keywordflow}{return} \$file;}
+\DoxyCodeLine{00368     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a570c1269e2a739a2849b7e579e7d83b9}\label{classComposer_1_1Autoload_1_1ClassLoader_a570c1269e2a739a2849b7e579e7d83b9}} 
@@ -280,10 +300,14 @@ The APCu prefix in use, or null if APCu caching is not enabled.
 string$\vert$null 
 \end{DoxyReturn}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00290}{290}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{291     \{}
-\DoxyCodeLine{292         \textcolor{keywordflow}{return} \$this-\/>apcuPrefix;}
-\DoxyCodeLine{293     \}}
+\DoxyCodeLine{00291     \{}
+\DoxyCodeLine{00292         \textcolor{keywordflow}{return} \$this-\/>apcuPrefix;}
+\DoxyCodeLine{00293     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a7e9a9730c400820ee2b1c995cd5134fe}\label{classComposer_1_1Autoload_1_1ClassLoader_a7e9a9730c400820ee2b1c995cd5134fe}} 
@@ -293,10 +317,14 @@ string$\vert$null
 {\footnotesize\ttfamily get\+Class\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00084}{84}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{85     \{}
-\DoxyCodeLine{86         \textcolor{keywordflow}{return} \$this-\/>classMap;}
-\DoxyCodeLine{87     \}}
+\DoxyCodeLine{00085     \{}
+\DoxyCodeLine{00086         \textcolor{keywordflow}{return} \$this-\/>classMap;}
+\DoxyCodeLine{00087     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_ae15bf208c8df574932ed0db749d5447b}\label{classComposer_1_1Autoload_1_1ClassLoader_ae15bf208c8df574932ed0db749d5447b}} 
@@ -306,10 +334,14 @@ string$\vert$null
 {\footnotesize\ttfamily get\+Fallback\+Dirs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00074}{74}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{75     \{}
-\DoxyCodeLine{76         \textcolor{keywordflow}{return} \$this-\/>fallbackDirsPsr0;}
-\DoxyCodeLine{77     \}}
+\DoxyCodeLine{00075     \{}
+\DoxyCodeLine{00076         \textcolor{keywordflow}{return} \$this-\/>fallbackDirsPsr0;}
+\DoxyCodeLine{00077     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a1f1f85b44a8d01987ad2b6cd78f268bd}\label{classComposer_1_1Autoload_1_1ClassLoader_a1f1f85b44a8d01987ad2b6cd78f268bd}} 
@@ -319,10 +351,14 @@ string$\vert$null
 {\footnotesize\ttfamily get\+Fallback\+Dirs\+Psr4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00079}{79}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{80     \{}
-\DoxyCodeLine{81         \textcolor{keywordflow}{return} \$this-\/>fallbackDirsPsr4;}
-\DoxyCodeLine{82     \}}
+\DoxyCodeLine{00080     \{}
+\DoxyCodeLine{00081         \textcolor{keywordflow}{return} \$this-\/>fallbackDirsPsr4;}
+\DoxyCodeLine{00082     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a102069675f7a94f8917f44acc2390687}\label{classComposer_1_1Autoload_1_1ClassLoader_a102069675f7a94f8917f44acc2390687}} 
@@ -332,14 +368,18 @@ string$\vert$null
 {\footnotesize\ttfamily get\+Prefixes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00060}{60}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{61     \{}
-\DoxyCodeLine{62         \textcolor{keywordflow}{if} (!empty(\$this-\/>prefixesPsr0)) \{}
-\DoxyCodeLine{63             \textcolor{keywordflow}{return} call\_user\_func\_array(\textcolor{stringliteral}{'array\_merge'}, \$this-\/>prefixesPsr0);}
-\DoxyCodeLine{64         \}}
-\DoxyCodeLine{65 }
-\DoxyCodeLine{66         \textcolor{keywordflow}{return} array();}
-\DoxyCodeLine{67     \}}
+\DoxyCodeLine{00061     \{}
+\DoxyCodeLine{00062         \textcolor{keywordflow}{if} (!empty(\$this-\/>prefixesPsr0)) \{}
+\DoxyCodeLine{00063             \textcolor{keywordflow}{return} call\_user\_func\_array(\textcolor{stringliteral}{'array\_merge'}, \$this-\/>prefixesPsr0);}
+\DoxyCodeLine{00064         \}}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066         \textcolor{keywordflow}{return} array();}
+\DoxyCodeLine{00067     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_aa51c60813356de68739dbc9047976ceb}\label{classComposer_1_1Autoload_1_1ClassLoader_aa51c60813356de68739dbc9047976ceb}} 
@@ -349,10 +389,14 @@ string$\vert$null
 {\footnotesize\ttfamily get\+Prefixes\+Psr4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00069}{69}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{70     \{}
-\DoxyCodeLine{71         \textcolor{keywordflow}{return} \$this-\/>prefixDirsPsr4;}
-\DoxyCodeLine{72     \}}
+\DoxyCodeLine{00070     \{}
+\DoxyCodeLine{00071         \textcolor{keywordflow}{return} \$this-\/>prefixDirsPsr4;}
+\DoxyCodeLine{00072     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a21c8a2ce47b9ab8184cce5949496414c}\label{classComposer_1_1Autoload_1_1ClassLoader_a21c8a2ce47b9ab8184cce5949496414c}} 
@@ -367,10 +411,14 @@ Can be used to check if the autoloader uses the include path to check for classe
 bool 
 \end{DoxyReturn}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00249}{249}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{250     \{}
-\DoxyCodeLine{251         \textcolor{keywordflow}{return} \$this-\/>useIncludePath;}
-\DoxyCodeLine{252     \}}
+\DoxyCodeLine{00250     \{}
+\DoxyCodeLine{00251         \textcolor{keywordflow}{return} \$this-\/>useIncludePath;}
+\DoxyCodeLine{00252     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a5187f29c880def2863b3592d2cce5844}\label{classComposer_1_1Autoload_1_1ClassLoader_a5187f29c880def2863b3592d2cce5844}} 
@@ -385,10 +433,14 @@ Should class lookup fail if not found in the current class map?
 bool 
 \end{DoxyReturn}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00270}{270}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{271     \{}
-\DoxyCodeLine{272         \textcolor{keywordflow}{return} \$this-\/>classMapAuthoritative;}
-\DoxyCodeLine{273     \}}
+\DoxyCodeLine{00271     \{}
+\DoxyCodeLine{00272         \textcolor{keywordflow}{return} \$this-\/>classMapAuthoritative;}
+\DoxyCodeLine{00273     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a8326a997d0cfe76d80196f60d240d144}\label{classComposer_1_1Autoload_1_1ClassLoader_a8326a997d0cfe76d80196f60d240d144}} 
@@ -408,14 +460,18 @@ string & {\em \$class} & The name of the class \\
 bool$\vert$null True if loaded, null otherwise 
 \end{DoxyReturn}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00319}{319}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{320     \{}
-\DoxyCodeLine{321         \textcolor{keywordflow}{if} (\$file = \$this-\/>\mbox{\hyperlink{classComposer_1_1Autoload_1_1ClassLoader_a4f8534c9205630e4b9c61e47ebf2867a}{findFile}}(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}})) \{}
-\DoxyCodeLine{322             \mbox{\hyperlink{namespaceComposer_1_1Autoload_ade0eb3081a1b30224fd6201805c0ff0c}{includeFile}}(\$file);}
-\DoxyCodeLine{323 }
-\DoxyCodeLine{324             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{325         \}}
-\DoxyCodeLine{326     \}}
+\DoxyCodeLine{00320     \{}
+\DoxyCodeLine{00321         \textcolor{keywordflow}{if} (\$file = \$this-\/>\mbox{\hyperlink{classComposer_1_1Autoload_1_1ClassLoader_a4f8534c9205630e4b9c61e47ebf2867a}{findFile}}(\mbox{\hyperlink{client_8php_a252ba022809910ea710a068fc1bab657}{\$class}})) \{}
+\DoxyCodeLine{00322             \mbox{\hyperlink{namespaceComposer_1_1Autoload_ade0eb3081a1b30224fd6201805c0ff0c}{includeFile}}(\$file);}
+\DoxyCodeLine{00323 }
+\DoxyCodeLine{00324             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00325         \}}
+\DoxyCodeLine{00326     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a3968965f178f6a5ef212b31b72231e69}\label{classComposer_1_1Autoload_1_1ClassLoader_a3968965f178f6a5ef212b31b72231e69}} 
@@ -432,10 +488,14 @@ bool & {\em \$prepend} & Whether to prepend the autoloader or not \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00300}{300}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{301     \{}
-\DoxyCodeLine{302         spl\_autoload\_register(array(\$this, \textcolor{stringliteral}{'loadClass'}), \textcolor{keyword}{true}, \$prepend);}
-\DoxyCodeLine{303     \}}
+\DoxyCodeLine{00301     \{}
+\DoxyCodeLine{00302         spl\_autoload\_register(array(\$this, \textcolor{stringliteral}{'loadClass'}), \textcolor{keyword}{true}, \$prepend);}
+\DoxyCodeLine{00303     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a558e395314f41f94b501b189ae74dcae}\label{classComposer_1_1Autoload_1_1ClassLoader_a558e395314f41f94b501b189ae74dcae}} 
@@ -454,14 +514,18 @@ array | string & {\em \$paths} & The PSR-\/0 base directories \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00201}{201}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{202     \{}
-\DoxyCodeLine{203         \textcolor{keywordflow}{if} (!\$prefix) \{}
-\DoxyCodeLine{204             \$this-\/>fallbackDirsPsr0 = (array) \$paths;}
-\DoxyCodeLine{205         \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{206             \$this-\/>prefixesPsr0[\$prefix[0]][\$prefix] = (array) \$paths;}
-\DoxyCodeLine{207         \}}
-\DoxyCodeLine{208     \}}
+\DoxyCodeLine{00202     \{}
+\DoxyCodeLine{00203         \textcolor{keywordflow}{if} (!\$prefix) \{}
+\DoxyCodeLine{00204             \$this-\/>fallbackDirsPsr0 = (array) \$paths;}
+\DoxyCodeLine{00205         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00206             \$this-\/>prefixesPsr0[\$prefix[0]][\$prefix] = (array) \$paths;}
+\DoxyCodeLine{00207         \}}
+\DoxyCodeLine{00208     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_aad0640d28c755d32a9c4d13322959848}\label{classComposer_1_1Autoload_1_1ClassLoader_aad0640d28c755d32a9c4d13322959848}} 
@@ -478,10 +542,14 @@ string | null & {\em \$apcu\+Prefix} & \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00280}{280}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{281     \{}
-\DoxyCodeLine{282         \$this-\/>apcuPrefix = function\_exists(\textcolor{stringliteral}{'apcu\_fetch'}) \&\& ini\_get(\textcolor{stringliteral}{'apc.enabled'}) ? \$apcuPrefix : \textcolor{keyword}{null};}
-\DoxyCodeLine{283     \}}
+\DoxyCodeLine{00281     \{}
+\DoxyCodeLine{00282         \$this-\/>apcuPrefix = function\_exists(\textcolor{stringliteral}{'apcu\_fetch'}) \&\& ini\_get(\textcolor{stringliteral}{'apc.enabled'}) ? \$apcuPrefix : \textcolor{keyword}{null};}
+\DoxyCodeLine{00283     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_aa3d6610396da6f5bef836d4fc5547816}\label{classComposer_1_1Autoload_1_1ClassLoader_aa3d6610396da6f5bef836d4fc5547816}} 
@@ -498,10 +566,14 @@ bool & {\em \$class\+Map\+Authoritative} & \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00260}{260}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{261     \{}
-\DoxyCodeLine{262         \$this-\/>classMapAuthoritative = \$classMapAuthoritative;}
-\DoxyCodeLine{263     \}}
+\DoxyCodeLine{00261     \{}
+\DoxyCodeLine{00262         \$this-\/>classMapAuthoritative = \$classMapAuthoritative;}
+\DoxyCodeLine{00263     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a7f92172519c08357430e7da877a88995}\label{classComposer_1_1Autoload_1_1ClassLoader_a7f92172519c08357430e7da877a88995}} 
@@ -525,19 +597,23 @@ array | string & {\em \$paths} & The PSR-\/4 base directories\\
 \hline
 \end{DoxyExceptions}
 Invalid\+Argument\+Exception 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00219}{219}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{220     \{}
-\DoxyCodeLine{221         \textcolor{keywordflow}{if} (!\$prefix) \{}
-\DoxyCodeLine{222             \$this-\/>fallbackDirsPsr4 = (array) \$paths;}
-\DoxyCodeLine{223         \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{224             \$length = strlen(\$prefix);}
-\DoxyCodeLine{225             \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} !== \$prefix[\$length -\/ 1]) \{}
-\DoxyCodeLine{226                 \textcolor{keywordflow}{throw} new \(\backslash\)InvalidArgumentException(\textcolor{stringliteral}{"{}A non-\/empty PSR-\/4 prefix must end with a namespace separator."{}});}
-\DoxyCodeLine{227             \}}
-\DoxyCodeLine{228             \$this-\/>prefixLengthsPsr4[\$prefix[0]][\$prefix] = \$length;}
-\DoxyCodeLine{229             \$this-\/>prefixDirsPsr4[\$prefix] = (array) \$paths;}
-\DoxyCodeLine{230         \}}
-\DoxyCodeLine{231     \}}
+\DoxyCodeLine{00220     \{}
+\DoxyCodeLine{00221         \textcolor{keywordflow}{if} (!\$prefix) \{}
+\DoxyCodeLine{00222             \$this-\/>fallbackDirsPsr4 = (array) \$paths;}
+\DoxyCodeLine{00223         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00224             \$length = strlen(\$prefix);}
+\DoxyCodeLine{00225             \textcolor{keywordflow}{if} (\textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} !== \$prefix[\$length -\/ 1]) \{}
+\DoxyCodeLine{00226                 \textcolor{keywordflow}{throw} new \(\backslash\)InvalidArgumentException(\textcolor{stringliteral}{"{}A non-\/empty PSR-\/4 prefix must end with a namespace separator."{}});}
+\DoxyCodeLine{00227             \}}
+\DoxyCodeLine{00228             \$this-\/>prefixLengthsPsr4[\$prefix[0]][\$prefix] = \$length;}
+\DoxyCodeLine{00229             \$this-\/>prefixDirsPsr4[\$prefix] = (array) \$paths;}
+\DoxyCodeLine{00230         \}}
+\DoxyCodeLine{00231     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_aed3e96782322ebc7352f1e62de1cc38c}\label{classComposer_1_1Autoload_1_1ClassLoader_aed3e96782322ebc7352f1e62de1cc38c}} 
@@ -554,10 +630,14 @@ bool & {\em \$use\+Include\+Path} & \\
 \hline
 \end{DoxyParams}
 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00238}{238}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{239     \{}
-\DoxyCodeLine{240         \$this-\/>useIncludePath = \$useIncludePath;}
-\DoxyCodeLine{241     \}}
+\DoxyCodeLine{00239     \{}
+\DoxyCodeLine{00240         \$this-\/>useIncludePath = \$useIncludePath;}
+\DoxyCodeLine{00241     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classComposer_1_1Autoload_1_1ClassLoader_a501cedfa611556a0100e024a0e102d9d}\label{classComposer_1_1Autoload_1_1ClassLoader_a501cedfa611556a0100e024a0e102d9d}} 
@@ -567,10 +647,14 @@ bool & {\em \$use\+Include\+Path} & \\
 {\footnotesize\ttfamily unregister (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Unregisters this instance as an autoloader. 
+
+Definition at line \mbox{\hyperlink{ClassLoader_8php_source_l00308}{308}} of file \mbox{\hyperlink{ClassLoader_8php_source}{Class\+Loader.\+php}}.
+
+
 \begin{DoxyCode}{0}
-\DoxyCodeLine{309     \{}
-\DoxyCodeLine{310         spl\_autoload\_unregister(array(\$this, \textcolor{stringliteral}{'loadClass'}));}
-\DoxyCodeLine{311     \}}
+\DoxyCodeLine{00309     \{}
+\DoxyCodeLine{00310         spl\_autoload\_unregister(array(\$this, \textcolor{stringliteral}{'loadClass'}));}
+\DoxyCodeLine{00311     \}}
 
 \end{DoxyCode}
 

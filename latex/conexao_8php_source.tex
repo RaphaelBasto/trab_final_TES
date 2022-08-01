@@ -1,0 +1,20 @@
+\hypertarget{conexao_8php_source}{}\doxysection{conexao.\+php}
+\mbox{\hyperlink{conexao_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00001}00001 <?php}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00003}00003 header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Origin: *"{}});}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00004}00004 header(\textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Methods: POST"{}});}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00006}\mbox{\hyperlink{conexao_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{00006}} \mbox{\hyperlink{conexao_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{\$hostname}} = \textcolor{stringliteral}{"{}us-\/cdbr-\/east-\/06.cleardb.net"{}};}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00007}\mbox{\hyperlink{conexao_8php_ac108c5ff77981efea5523fef9f5b8d9a}{00007}} \mbox{\hyperlink{conexao_8php_ac108c5ff77981efea5523fef9f5b8d9a}{\$banco}} = \textcolor{stringliteral}{"{}heroku\_4cf7aeee71cae59"{}};}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00008}\mbox{\hyperlink{conexao_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{00008}} \mbox{\hyperlink{conexao_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}} = \textcolor{stringliteral}{"{}bbec8ec88a2b5f"{}}; }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00009}\mbox{\hyperlink{conexao_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{00009}} \mbox{\hyperlink{conexao_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textcolor{stringliteral}{"{}3a9c327b"{}}; }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00011}\mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{00011}} \mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}} =  new \(\backslash\)MySQLi(\mbox{\hyperlink{conexao_8php_a8bf9ffb42ed554b203b55377d1fc9aa4}{\$hostname}}, \mbox{\hyperlink{conexao_8php_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username}}, \mbox{\hyperlink{conexao_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}}, \mbox{\hyperlink{conexao_8php_ac108c5ff77981efea5523fef9f5b8d9a}{\$banco}});}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00013}00013 \textcolor{keywordflow}{if} (\mbox{\hyperlink{conexao_8php_a580989e8e3521433691a0351287f6315}{\$mysqli}}-\/>connect\_error) \{}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00014}00014     die(\textcolor{stringliteral}{"{}Connection failed: "{}} . \$conn-\/>connect\_error);}
+\DoxyCodeLine{\Hypertarget{conexao_8php_source_l00015}00015 \}}
+
+\end{DoxyCode}
