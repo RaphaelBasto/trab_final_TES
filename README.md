@@ -4,9 +4,9 @@ Repositório para armazenar o trabalho final da disciplina de Desenvolvimento We
 
 ---
 
-### Link Github: https://github.com/AdeLuigi/trab_final_dev_web.git
+### Link Github: https://github.com/RaphaelBasto/trab_final_TES
 
-Link Site online: [https://site-web-ade.000webhostapp.com/web/bonieky-live-javascript/urna-eletronica/](https://site-web-ade.000webhostapp.com/web/bonieky-live-javascript/urna-eletronica/)
+Link Site online: 
 
 # Requisitos para rodar a aplicação localmente:
 
